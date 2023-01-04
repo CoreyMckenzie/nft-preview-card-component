@@ -1,5 +1,6 @@
 body {
     background-color: #0D192C;
+    font-family: 'Outfit', sans-serif;
 }
 
 h3 {
@@ -14,19 +15,32 @@ p {
 
 .card-container {
     background-color: #15263F;
+    border-radius: 15px;;
     max-width: 350px;
     max-height: 396;
     
 }
 
 .crypto {
-    border-radius: 10px;
-    display: flex;
-    width: 302px;
-    height: 302px;
-    margin-inline: auto;
-   
 
+    border-radius: 10px;
+
+   
+    width: 310px;
+    height: 310px;
+    margin-top: 20px;
+
+   
+}
+
+main {
+        margin: 20px;
+}
+
+main p {
+    font-weight: 300;
+    line-height: 26px;
+    font-size: 18px;
 }
 
 ul {
@@ -34,11 +48,24 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 0;
-    margin: 20px
+    margin-bottom: 20px;
+}
+
+.icon {
+    position: relative;
+    top: 3.5px;
+    margin-right: 7px;
 
 }
 
+.icon-2 {
+    position: relative;
+    top: 3px;
+    margin-right: 7px;
+    
+}
 
 #price {
     color: #00FFF8;
@@ -46,6 +73,7 @@ ul {
 
 li {
     color: #8BACD9;
+
 }
 
 #author {
@@ -53,11 +81,16 @@ li {
 }
 
 footer {
+    position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 0;
-    margin: 20px
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+    margin-inline: 20px;
+    padding-bottom: 10px;
+    bottom: 15px;
+
 }
 
 footer img {
@@ -67,3 +100,26 @@ footer img {
     height: 30px;
 }
 
+hr {
+    border: none;
+    background-color: #8BACD9;
+    height: 1px;
+    width: 100%;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+  }
+  
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
